@@ -15,7 +15,7 @@ YESNO=${YESNO:-Y}
 if [[ $YESNO =~ ^[yY]$ ]]; then
     echo "doing it..."
     for f in $(ls $FILES_DIR); do
-        rm "$HOME/.$f"
+        rm -f "$HOME/.$f"
         ln -vs "$PWD/$FILES_DIR/$f" "$HOME/.$f"
     done
 
