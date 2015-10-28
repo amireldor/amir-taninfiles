@@ -1,0 +1,7 @@
+[user]
+	name = Amir Eldor
+	email = amir.eldor@gmail.com
+[push]
+	default = simple
+[core]
+	excludesfile = /home/amir/.gitignore.global

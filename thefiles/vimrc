@@ -1,0 +1,41 @@
+set nocompatible
+syn on
+set autoindent smartindent linebreak incsearch mouse=a nowrap
+set expandtab ts=4 sts=4 sw=4
+set backspace=indent,eol,start
+set wildmode=longest,list,full
+set foldmethod=syntax foldlevelstart=99
+set completeopt=longest,menuone
+
+set t_Co=256
+set background=dark
+colorscheme PaperColor
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-scripts/a.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Shougo/unite.vim'
+Plugin 'mattn/emmet-vim'
+
+call vundle#end()
+filetype plugin indent on
+
+map <F2> :Unite file_rec<CR>
+map <F3> :NERDTreeToggle<CR>
+map <C-h> :set hls!<CR>
+
+" cd to current file's folder like a BOSS!
+" I need this as I was in ~ when opening a file in nautilus with GVim. This
+" solved it.
+if @% != ""
+  cd %:h
+endif
+
+" I like to :set wrap sometimes, this makes navigation easier, especially when editing text:
+map j gj
+map k gk
