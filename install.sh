@@ -10,9 +10,11 @@ echo "This will create a symlink to all the interesting files in the interesting
 
 read -p "Go for it? (Y/n): " YESNO
 
+# default to 'Y'
 YESNO=${YESNO:-Y}
 
 if [[ $YESNO =~ ^[yY]$ ]]; then
+
     echo "doing it..."
     for f in $(ls $FILES_DIR); do
         rm -f "$HOME/.$f"
