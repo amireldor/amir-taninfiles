@@ -26,6 +26,7 @@ call vundle#end()
 filetype plugin indent on
 
 map <F2> :Unite file_rec<CR>
+map <C-b> :Unite buffer<CR>
 map <F3> :NERDTreeToggle<CR>
 map <C-h> :set hls!<CR>
 
