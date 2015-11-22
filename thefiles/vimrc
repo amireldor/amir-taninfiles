@@ -6,6 +6,7 @@ set backspace=indent,eol,start
 set wildmode=longest,list,full
 set foldmethod=syntax foldlevelstart=99
 set completeopt=longest,menuone
+set number
 
 set t_Co=256
 set background=dark
@@ -19,14 +20,16 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/a.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Shougo/unite.vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
 
-map <F2> :Unite file_rec<CR>
-map <C-b> :Unite buffer<CR>
+map <F2> :Ex .<CR>
+map <C-b> :CtrlPBuffer<CR>
 map <F3> :NERDTreeToggle<CR>
 map <C-h> :set hls!<CR>
 
