@@ -1,7 +1,18 @@
 [user]
 	name = Amir Eldor
-	email = amir.eldor@gmail.com
+	email = amir@eize.ninja
 [push]
 	default = simple
 [core]
 	excludesfile = /home/amir/.gitignore.global
+	editor = vim
+[alias]
+    a = add
+    c = commit
+    co = checkout
+    d = diff
+    dc = diff --cached
+    l = log
+    nm = log --no-merged
+    s = status
+
