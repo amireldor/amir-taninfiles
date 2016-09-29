@@ -21,7 +21,7 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 
