@@ -6,5 +6,4 @@ echo "Configuring git with amir@eize.nijna..."
 git config --global user.name "Amir Eldor"
 git config --global user.email "amir@eize.ninja"
 git config --global core.editor vim
-read -p "Did you set up an ssh key on GitHub? Do it now or die"
 
