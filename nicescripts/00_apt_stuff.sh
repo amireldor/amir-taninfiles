@@ -8,5 +8,8 @@ apt install \
     build-essential \
     vim \
     python3 \
-    virtualenvwrapper
+    virtualenvwrapper \
+    python-dev \
+    python-pip \
+    python3-pip
 
