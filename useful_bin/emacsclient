@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+# vim: ft=python
+
+# opens an emacs daemon if one is not running, connects to it and creates a new
+# frame.
+
+import os
+import sys
+
+class AmirEmacsClientCommandRunner:
+    bin_name = "/usr/bin/emacsclient"
+    default_filename = "~/Desktop/temp"
+    emacsclient_args = '-a "" -c'
+
+    def __init__(self):
+        self.filenames = []
+        self.args_tail = []
+        self.command = ""
+
+    def run(self):
+        self.process_args()
+        self.decide_filenames_for_command()
+        self.wrap_filenames_in_quotes()
+        self.execute()
+
+    def process_args(self):
+        self.args_tail = sys.argv[1:]
+
+    def decide_filenames_for_command(self):
+        if len(self.args_tail) == 0:
+            self.filenames = [self.default_filename]
+        else:
+            self.filenames = self.args_tail
+
+    def wrap_filenames_in_quotes(self):
+        self.filenames = ['"%s"' % f for f in self.filenames]
+
+    def execute(self):
+        self.command = "{0} {2} {1}".format(self.bin_name, ' '.join(self.filenames), self.emacsclient_args)
+        os.system(self.command)
+
+
+if __name__ == "__main__":
+    AmirEmacsClientCommandRunner().run()
+
