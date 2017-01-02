@@ -150,4 +150,4 @@ GIT_PROMPT_THEME=Evermeet # use custom theme specified in file GIT_PROMPT_THEME_
 # GIT_PROMPT_THEME=Solarized # use theme o
 source ~/.bash-git-prompt/gitprompt.sh
 
-export PATH=~/bin:~/.npm-packages/bin:$PATH
+export PATH=~/.bin:~/.npm-packages/bin:$PATH
