@@ -10,7 +10,7 @@
     a = add
     c = commit
     co = checkout
-    d = diff
+    d = diff --word-diff=color
     dc = diff --cached
     l = log
     nm = log --no-merged
