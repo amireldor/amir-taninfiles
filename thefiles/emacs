@@ -3,8 +3,17 @@
 	     '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
+(setq vc-follow-symlinks t)
+
+(global-evil-leader-mode)
 (require 'evil)
-(evil-mode 1)
+(evil-mode t)
+(evil-leader/set-leader "<SPC>")
+(evil-leader/set-key "c" 'company-complete)
+
+(add-hook 'js-mode-hook (lambda () (tern-mode t)))
+(add-hook 'after-init-hook 'global-company-mode)
+(eval-after-load 'company '(add-to-list 'company-backends 'company-tern))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -13,7 +22,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ansible nginx-mode yaml-mode vertigo markdown-preview-mode evil-org evil-nerd-commenter evil-mc-extras evil-magit)))
+    (company company-tern auto-complete tern ansible nginx-mode yaml-mode vertigo markdown-preview-mode evil-org evil-nerd-commenter evil-mc-extras evil-magit)))
  '(truncate-lines t)
  '(visible-bell t)
  '(word-wrap t))
