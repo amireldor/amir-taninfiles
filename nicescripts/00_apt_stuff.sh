@@ -12,5 +12,6 @@ apt install \
     python-dev \
     python-pip \
     python3-pip \
-    meld
+    meld \
+    tree
 
