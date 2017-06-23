@@ -13,7 +13,11 @@
 
 (evil-leader/set-key
   "j" 'vertigo-visible-jump-down
-  "k" 'vertigo-visible-jump-up)
+  "k" 'vertigo-visible-jump-up
+  "f" 'find-file
+  "b" 'switch-to-buffer
+  "d" 'dired
+  )
 
 (add-hook 'js-mode-hook (lambda () (tern-mode t)))
 (add-hook 'after-init-hook 'global-company-mode)
@@ -29,9 +33,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (relative-line-numbers editorconfig company company-tern auto-complete tern ansible nginx-mode yaml-mode vertigo markdown-preview-mode evil-org evil-nerd-commenter evil-mc-extras evil-magit)))
+    (fiplr relative-line-numbers editorconfig company company-tern auto-complete tern ansible nginx-mode yaml-mode vertigo markdown-preview-mode evil-org evil-nerd-commenter evil-mc-extras evil-magit)))
  '(truncate-lines t)
  '(visible-bell t)
  '(word-wrap t))
