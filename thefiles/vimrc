@@ -40,7 +40,8 @@ map k gk
 
 nmap <f5> :e $MYVIMRC<cr>
 
-colorscheme jellybeans
+set t_Co=256
+silent! colorscheme jellybeans
 nmap <Space> <leader>
 map <M-x> <C-]>
 map <M-z> <C-o>
