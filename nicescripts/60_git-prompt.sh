@@ -6,7 +6,7 @@ git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --d
 
 if ! grep -q GIT_PROMPT_ONLY_IN_REPO "$HOME/.bashrc"; then
 
-cat <<CONFIG >> ~/.bashrc
+cat <<CONFIG >> "$HOME/.bashrc"
 
 
 # Set config variables first
