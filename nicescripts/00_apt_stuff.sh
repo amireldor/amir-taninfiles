@@ -13,5 +13,7 @@ apt install \
     python-pip \
     python3-pip \
     meld \
-    tree
+    tree \
+    npm \
+    cmake
 
