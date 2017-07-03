@@ -1,11 +1,10 @@
 #!/bin/bash
-
 # Clones the taninfiles, THIS repository my dotfiles config repository
 
-read -p "Did you set up an ssh key on GitHub? Do it now or die"
+# Note: ssh key should be configured for GitHub
 
 mkdir -p $HOME/repos
-echo "Cloning amir's taninfiles from GitHub..."
+echo "Cloning taninfiles from GitHub..."
 git clone --recursive git@github.com:amireldor/amir-taninfiles.git $HOME/repos/amir-taninfiles
 
 

@@ -1,9 +1,8 @@
 #!/bin/bash
-
 # Install packages I commonly use for development
 
-echo "Installing development stuff using with apt (run as root/sudo)..."
-apt install \
+echo "Installing interesting packages (apt install)"
+sudo apt install \
     git \
     build-essential \
     vim \
