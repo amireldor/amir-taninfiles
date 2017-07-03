@@ -2,6 +2,7 @@
 # Install packages I commonly use for development
 
 echo "Installing interesting packages (apt install)"
+sudo apt update
 sudo apt install \
     git \
     build-essential \
@@ -14,5 +15,7 @@ sudo apt install \
     meld \
     tree \
     npm \
-    cmake
+    cmake \
+    libtool-bin \
+    xclip
 
