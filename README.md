@@ -1,6 +1,9 @@
 This is amir-taninfiles
 =======================
 
+Note of doom: there's a branch called 'one' which I will probably switch to as soon as it's done.
+It has one script to do the whole bootstraping process. One script is cool.
+
 This is basically my dotfiles repository along with some Linux system bootstrap helper scripts.
 
 Notes to self:  
