@@ -2,8 +2,8 @@ I want to make a amirize.sh script that install EVERYTHING and not the nexe sh~t
 
 TODO:
 
-[ ] neovim install
-    [ ] clone repo
-    [ ] init.vim -> taken from vimrc or not? probably not
-    [ ] autoload vim-plug and auto install plugins
+[x] neovim install
+    [x] clone repo
+    [x] init.vim -> taken from vimrc or not? probably not
+    [x] autoload vim-plug and auto install plugins
 [ ] warn about ssh-key in github - can I check somehow manually instead of warning and Y/n?
