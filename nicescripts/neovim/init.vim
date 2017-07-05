@@ -38,12 +38,17 @@ map <F8> :e /tmp/amir<cr>
 "set t_Co=256
 silent! colorscheme jellybeans
 nmap <Space> <leader>
-map <M-x> <C-]>
-map <M-z> <C-o>
-
 let g:python_host_prog  = '/home/amir/.virtualenvs/neovim/bin/python'
 let g:python3_host_prog  = '/home/amir/.virtualenvs/neovim3/bin/python'
 
 silent! autocmd BufRead * :DetectIndent
 
 set visualbell
+
+" Don't work under some terminals (mate-terminal! ahem...)
+"map <M-z> <C-o>
+"map <M-x> <C-i>
+" ...
+" So this works, thanks StackOverflow (type <CTRL-v> <ESC> to input weird ^[)
+map z <C-o>
+map x <C-i>
