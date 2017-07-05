@@ -11,6 +11,9 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'jceb/vim-orgmode'
+Plug 'ciaranm/detectindent'
+Plug 'vim-syntastic/syntastic'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 map <F2> :Ex .<CR>
@@ -41,3 +44,6 @@ map <M-z> <C-o>
 let g:python_host_prog  = '/home/amir/.virtualenvs/neovim/bin/python'
 let g:python3_host_prog  = '/home/amir/.virtualenvs/neovim3/bin/python'
 
+silent! autocmd BufRead * :DetectIndent
+
+set visualbell
