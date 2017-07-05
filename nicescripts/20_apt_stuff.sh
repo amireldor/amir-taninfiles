@@ -17,5 +17,5 @@ sudo apt install \
     npm \
     cmake \
     libtool-bin \
-    xclip
-
+    xclip \
+    chromium-browser
