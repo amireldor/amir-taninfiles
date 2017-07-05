@@ -1,8 +1,10 @@
 This is amir-taninfiles
 =======================
 
-Note of doom: there's a branch called 'one' which I will probably switch to as soon as it's done.
+**Note of doom:** there's a branch called 'one' which I will probably merge to as soon as it's done.
 It has one script to do the whole bootstraping process. One script is cool.
+
+**Yet another note of doom:** why not make an Ansible script to install this stuff on localhost as inventory? **Warning:** don't fall into a refactoring-syndrome. Finish 'one' branch first.
 
 This is basically my dotfiles repository along with some Linux system bootstrap helper scripts.
 
