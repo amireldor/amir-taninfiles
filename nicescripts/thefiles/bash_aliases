@@ -1,0 +1,9 @@
+# easy access to temp folder for trying out stuff
+alias t='mkdir -p ~/tmp && cd ~/tmp'
+
+# `tree` command helers
+alias t2='tree -L 2'       
+alias t3='tree -L 3'      
+
+# current project's symink, hopefully
+alias p='cd ~/p'
