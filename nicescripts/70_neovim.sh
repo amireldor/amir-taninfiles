@@ -11,10 +11,10 @@ cp "$PWD/neovim/plug.vim" ~/.local/share/nvim/site/autoload/
 ln -sf "$PWD/thefiles/vim/ftplugin" ~/.config/nvim/
 
 # install it
-SRC_FOLDER=$HOME/repos/upstream
+NEOVIM_FOLDER=$HOME/repos/upstream
 
-mkdir -p "$SRC_FOLDER"
-cd "$SRC_FOLDER"
+mkdir -p "$NEOVIM_FOLDER"
+cd "$NEOVIM_FOLDER"
 git clone https://github.com/neovim/neovim.git
 
 cd neovim
