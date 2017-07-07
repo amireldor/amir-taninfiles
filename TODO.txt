@@ -1,1 +1,1 @@
-[ ] Install pyyhon-neovim[3] in two venvs
+[ ] Install python-neovim[3] in two venvs
