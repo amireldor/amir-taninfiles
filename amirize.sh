@@ -18,6 +18,7 @@ sudo echo "hello from sudo"
 # consider ls + sort, but consider not as well
 bash 20_apt_stuff.sh
 bash 30_node.sh
+bash 35_github_host.sh
 bash 40_taninfiles.sh
 bash 50_dotfiles_symlinks.sh
 bash 55_npm_home.sh
