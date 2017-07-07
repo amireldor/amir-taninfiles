@@ -1,11 +1,1 @@
-I want to make a amirize.sh script that install EVERYTHING and not the nexe sh~t I did on master.
-
-TODO:
-
-[x] neovim install
-    [x] clone repo
-    [x] init.vim -> taken from vimrc or not? probably not
-    [x] autoload vim-plug and auto install plugins
-[ ] warn about ssh-key in github - can I check somehow manually instead of warning and Y/n?
-[ ] How to ask for admin priviledges? hanging on sudo is not nice. Run stuff async and then run all sudo tasks together? What would I do with an Ansible script? What would Ansible users do? Provide password one time in playbook invocations? Mayeb I *should* consider converting all scripts to Ansible... of course have Ansible installed automatically as well.
-[ ] Does node has to be installed globally? What about installing n and then installing node to ~/.npm-packages (configured via a script here)?
+[ ] Install pyyhon-neovim[3] in two venvs
