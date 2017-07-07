@@ -24,3 +24,5 @@ bash 55_npm_home.sh
 bash 60_git-prompt.sh
 bash 70_neovim.sh
 bash 80_vim_plug.sh
+
+echo "Good luck! And may the GZOO be with you!"
