@@ -1,9 +1,9 @@
 #!/bin/bash
-
 # Install packages I commonly use for development
 
-echo "Installing development stuff using with apt (run as root/sudo)..."
-apt install \
+echo "Installing interesting packages (apt install)"
+sudo apt update
+sudo apt install -y \
     git \
     build-essential \
     vim \
@@ -15,5 +15,9 @@ apt install \
     meld \
     tree \
     npm \
-    cmake
-
+    cmake \
+    libtool-bin \
+    xclip \
+    chromium-browser \
+    pkg-config \
+    automake
