@@ -18,4 +18,6 @@ sudo apt install -y \
     cmake \
     libtool-bin \
     xclip \
-    chromium-browser
+    chromium-browser \
+    pkg-config \
+    automake
