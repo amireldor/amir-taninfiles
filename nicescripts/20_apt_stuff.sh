@@ -3,6 +3,7 @@
 
 echo "Installing interesting packages (apt install)"
 sudo apt update
+sudo apt upgrade -y
 sudo apt install -y \
     git \
     build-essential \
