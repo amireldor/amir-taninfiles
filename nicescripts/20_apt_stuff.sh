@@ -22,4 +22,5 @@ sudo apt install -y \
     chromium-browser \
     pkg-config \
     automake \
-    p7zip-full
+    p7zip-full \
+    gimp
