@@ -21,4 +21,5 @@ sudo apt install -y \
     xclip \
     chromium-browser \
     pkg-config \
-    automake
+    automake \
+    p7zip-full
