@@ -14,6 +14,16 @@ Plug 'jceb/vim-orgmode'
 Plug 'ciaranm/detectindent'
 Plug 'vim-syntastic/syntastic'
 Plug 'editorconfig/editorconfig-vim'
+
+Plug 'guns/vim-clojure-static'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'guns/vim-clojure-highlight'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-classpath'
+"Plug 'clojure-vim/nvim-parinfer.js'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+
 call plug#end()
 
 map <F2> :Ex .<CR>
@@ -52,3 +62,11 @@ set visualbell
 " So this works, thanks StackOverflow (type <CTRL-v> <ESC> to input weird ^[)
 map z <C-o>
 map x <C-i>
+
+" kien/rainbow_parenthesses.vim
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+set number
