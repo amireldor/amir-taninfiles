@@ -1,7 +1,7 @@
 #!/bin/bash
 # Make symlinks to the common dotfiles on my $HOME
 
-FILES_DIR="$HOME/repos/amir-taninfiles/nicescripts/thefiles"
+FILES_DIR="thefiles"
 BACKUP_DIR="$HOME/amir-taninfiles.originals"
 
 echo "Making a lot of symlinks for dotfiles"

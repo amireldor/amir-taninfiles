@@ -20,6 +20,7 @@ bash 20_apt_stuff.sh
 bash 30_node.sh
 bash 35_github_host.sh
 bash 40_taninfiles.sh
+cd "$HOME/repos/amir-taninfiles/nicescripts"
 bash 50_dotfiles_symlinks.sh
 bash 55_npm_home.sh
 bash 60_git-prompt.sh
