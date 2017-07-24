@@ -23,7 +23,6 @@ Plug 'tpope/vim-classpath'
 "Plug 'clojure-vim/nvim-parinfer.js'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
-
 call plug#end()
 
 map <F2> :Ex .<CR>
@@ -70,3 +69,6 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 set number
+
+" riotjs syntax highlighting
+au BufRead,BufNewFile *.tag :set filetype=html

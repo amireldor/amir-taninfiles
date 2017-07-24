@@ -7,3 +7,7 @@ alias t3='tree -L 3'
 
 # current project's symink, hopefully
 alias p='cd ~/p'
+alias pp='cd ~/pp'
+
+# taskwarrior
+alias tl='task'
