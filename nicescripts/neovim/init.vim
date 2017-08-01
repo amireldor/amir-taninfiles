@@ -1,4 +1,5 @@
 set expandtab ts=4 sts=4 sw=4
+set mouse=a
 
 call plug#begin('~/vimfiles/bundle')
 Plug 'vim-scripts/a.vim'

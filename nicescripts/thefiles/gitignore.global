@@ -4,7 +4,6 @@
 *.pyc
 __pycache__/
 *~
-yarn.lock
 yarn-error.log
 .tern-port
 npm-debug.log
